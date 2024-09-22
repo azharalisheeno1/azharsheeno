@@ -8,9 +8,9 @@ import Logo2 from "../../public/logos/li.png";
 import Logo3 from "../../public/logos/github.png";
 import Logo4 from "../../public/logos/whatsapp.png";
 
-// import Link from "next/link";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import TalkButton from "./TalkButton";
 function Hero() {
   const social_media = [
     {
@@ -83,21 +83,15 @@ function Hero() {
               <div className="flex flex-col md:flex-row md:gap-2">
                
                
-                <a
+                <Link
                 target="_blank"
                   href="https://drive.google.com/file/d/1zRzqJDx4EeKE2n5bR-rkKHz9IlkWJNaN/view?usp=drive_link"
                   className="text-white bg-cyan-500 hover:bg-cyan-600   p-3 rounded-xl   font-semibold my-3 "
                 >
                   Download Resume
-                </a>
-               
-              
-                <Link
-                  to="contact"
-                  className="text-black cursor-pointer border-gray-700  hover:bg-slate-700 hover:border-none bg-white border  hover:text-white hover:shadow-2xl p-3 rounded-xl   font-semibold my-3 "
-                >
-               Let's Talk
                 </Link>
+               <TalkButton/>
+              
               </div>
 
               <div className="mt-3 text-3xl flex items-center md:justify-start   justify-center gap-5">
@@ -108,7 +102,7 @@ function Hero() {
                     key={id}
                     className=" hover:text-gray-900 cursor-pointer "
                   >
-                    <Image src={logos} alt="loading" className="w-8 h-8" />
+                    <Image   src={logos} alt="loading" className="w-8 h-8 hover:scale-105 " />
                   </Link>
                 ))}
               </div>
