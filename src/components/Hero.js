@@ -7,7 +7,9 @@ import Logo from "../../public/logos/email.png";
 import Logo2 from "../../public/logos/li.png";
 import Logo3 from "../../public/logos/github.png";
 import Logo4 from "../../public/logos/whatsapp.png";
-import Link from "next/link";
+
+// import Link from "next/link";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 function Hero() {
   const social_media = [
@@ -79,18 +81,22 @@ function Hero() {
               </p>
 
               <div className="flex flex-col md:flex-row md:gap-2">
-                <Link
-                  href="/"
+               
+               
+                <a
+                target="_blank"
+                  href="https://drive.google.com/file/d/1zRzqJDx4EeKE2n5bR-rkKHz9IlkWJNaN/view?usp=drive_link"
                   className="text-white bg-cyan-500 hover:bg-cyan-600   p-3 rounded-xl   font-semibold my-3 "
                 >
                   Download Resume
-                </Link>
+                </a>
                
+              
                 <Link
-                  href="/contact"
-                  className="text-black border-gray-700  hover:bg-slate-700 hover:border-none bg-white border  hover:text-white hover:shadow-2xl p-3 rounded-xl   font-semibold my-3 "
+                  to="contact"
+                  className="text-black cursor-pointer border-gray-700  hover:bg-slate-700 hover:border-none bg-white border  hover:text-white hover:shadow-2xl p-3 rounded-xl   font-semibold my-3 "
                 >
-                  Let's Talk
+               Let's Talk
                 </Link>
               </div>
 
