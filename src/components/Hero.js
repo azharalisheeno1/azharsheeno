@@ -80,7 +80,7 @@ function Hero() {
 
               <div className="flex flex-col md:flex-row md:gap-2">
                 <Link
-                  href="/portfolio"
+                  href="/"
                   className="text-white bg-cyan-500 hover:bg-cyan-600   p-3 rounded-xl   font-semibold my-3 "
                 >
                   Download Resume
