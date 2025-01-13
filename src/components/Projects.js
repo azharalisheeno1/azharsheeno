@@ -11,7 +11,7 @@ function Projects() {
   return (
     <>
     
-    <section id="projects" className=" h-screen py-20    bg-slate-950 text-white">
+    <section id="projects" className=" h-full py-20    bg-slate-950 text-white">
         <div className="text-center">
           <h2 className="text-3xl font-bold border-b uppercase  w-fit mx-auto border-cyan-400 mb-4">PROJECTS </h2>
           <p className=" mt-2 md:max-w-7xl mx-auto text-sm text-justify md:text-center px-6 ">

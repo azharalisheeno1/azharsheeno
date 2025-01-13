@@ -5,11 +5,27 @@ import project4 from "../../../public/projects/4.jpg"
 import project5 from "../../../public/projects/5.jpg"
 import project6 from "../../../public/projects/6.jpg"
 import project7 from "../../../public/projects/7.jpg";
-import project8 from "../../../public/projects/8.jpg"
-import project9 from "../../../public/projects/9.jpg"
+// import project8 from "../../../public/projects/8.jpg"
+// import project9 from "../../../public/projects/9.jpg"
 import project10 from "../../../public/projects/10.jpg"
+import project11 from "../../../public/projects/11.png"
+import project12 from "../../../public/projects/12.png"
 
 export const projects = [
+    {
+      img: project11,
+      name: "Car Rent Showroom ",
+      github_link: "https://github.com/azharalisheeno1/Car-Rent",
+      live_link: "https://car-rent-nu-gold.vercel.app/",
+      
+    },
+    {
+      img: project12,
+      name: "Skills Gro ",
+      github_link: "https://github.com/azharalisheeno1/Skill-Gro",
+      live_link: "",
+      
+    },
     {
       img: project1,
       name: "Food Frenzy Website ",
@@ -54,6 +70,13 @@ export const projects = [
     },
     {
       img: project6,
+      name: "Post Creator",
+      github_link: "https://github.com/azharalisheeno1/SocialApp.git",
+      live_link: "https://postcreator-2fd63.web.app",
+      
+    },
+    {
+      img: project7,
       name: "Students Registration Form",
       github_link: "https://github.com/azharalisheeno1/Students-Registration-Form.git",
       live_link: "https://studentsregistrationform-90a30.web.app/",
@@ -61,24 +84,18 @@ export const projects = [
     },
 
 
-    {
-      img: project7,
-      name: "Post Creator",
-      github_link: "https://github.com/azharalisheeno1/SocialApp.git",
-      live_link: "https://postcreator-2fd63.web.app",
-      
-    },
-    {
-      img: project8,
-      name: "Calculator",
-      github_link: "https://github.com/azharalisheeno1/Calculator.git",
-      live_link: "https://calculatorapp-9aa66.web.app",
-    },
-    {
-      img: project9,
-      name: "Analog Clock",
-      github_link: "https://github.com/azharalisheeno1/Analog-Clock.git",
-      live_link: "https://analog-clock-5ddcd.web.app",
+    
+    // {
+    //   img: project8,
+    //   name: "Calculator",
+    //   github_link: "https://github.com/azharalisheeno1/Calculator.git",
+    //   live_link: "https://calculatorapp-9aa66.web.app",
+    // },
+    // {
+    //   img: project9,
+    //   name: "Analog Clock",
+    //   github_link: "https://github.com/azharalisheeno1/Analog-Clock.git",
+    //   live_link: "https://analog-clock-5ddcd.web.app",
      
-    },
+    // },
   ];

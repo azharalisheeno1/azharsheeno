@@ -14,6 +14,8 @@ import canva from "../../public/skills/canva.png";
 import framer from "../../public/skills/framer.png";
 import Formik from "../../public/skills/formik.png";
 import yup from "../../public/skills/yup.png";
+import node from "../../public/skills/node.png";
+import express from "../../public/skills/express.png";
 
 import next from "../../public/skills/next.png";
 import mongodb from "../../public/skills/mongodb.png";
@@ -61,18 +63,31 @@ const Skills = () => {
       count: 6,
       shadow: " shadow-blue-400",
     },
+    {
+      logo: node,
+      level: "Node JS",
+      count: 6,
+      shadow: " shadow-green-400",
+    },
+    {
+      logo: express,
+      level: "Express JS",
+      count: 6,
+      shadow: " shadow-gray-400",
+    },
+
+    {
+      logo: mongodb,
+      level: "MongoDB",
+      count: 8,
+      shadow: " shadow-green-500",
+    },
 
     {
       logo: next,
       level: "Next JS ",
       count: 7,
       shadow: " shadow-gray-700",
-    },
-    {
-      logo: mongodb,
-      level: "MongoDB",
-      count: 8,
-      shadow: " shadow-green-500",
     },
 
     {

@@ -38,7 +38,7 @@ function Hero() {
   ];
 
   const [typeEffect] = useTypewriter({
-    words: ["Next JS Developer", "React JS Developer", "Front-end Developer"],
+    words: ["Full Stack Developer","Next JS Developer", "React JS Developer", "Front-end Developer"],
     loop: {},
     typeSpeed: 50,
     deleteSpeed: 40,

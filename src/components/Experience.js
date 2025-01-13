@@ -11,10 +11,28 @@ function Experience() {
       className="text-white md:h-90 w-full max-w-6xl text-start mx-auto   rounded-lg shadow-lg">
         <div className="mb-6 md:mb-2">
           <h1 className="text-md sm:text-xl lg:text-xl font-bold mb-2">
+            Junior React.js Developer
+          </h1>
+          <h2 className="text-lg sm:text-lg lg:text-xl mb-1"></h2>
+          <p className="text-base sm:text-lg mb-2">DISMAK CSP</p>
+
+          <p className="text-base sm:text-lg">Date: January-2024 | December 2024</p>
+        </div>
+        <div className="text-justify">
+          <p className="leading-relaxed text-sm sm:text-base lg:text-lg">
+          I have completed a 1 year remote role as a React.js developer, where I
+worked on developing responsive web applications and enhancing user
+interfaces. During this time, I gained valuable experience in component-based
+architecture, state management, and collaborating with cross-functional
+teams.
+          </p>
+        </div>
+        <div className="mb-6 md:mt-8">
+          <h1 className="text-md sm:text-xl lg:text-xl font-bold mb-2">
             Freelancing
           </h1>
           <h2 className="text-lg sm:text-lg lg:text-xl mb-1"></h2>
-          <p className="text-base sm:text-lg mb-2">Fiverr & Freelancer</p>
+         
 
           <p className="text-base sm:text-lg">Date: June-2024 | Present</p>
         </div>
