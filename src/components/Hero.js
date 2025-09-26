@@ -6,7 +6,6 @@ import Logo from "../../public/logos/email.png";
 import Logo2 from "../../public/logos/li.png";
 import Logo3 from "../../public/logos/github.png";
 import Logo4 from "../../public/logos/whatsapp.png";
-
 import Link from "next/link";
 import { motion } from "framer-motion";
 import TalkButton from "./TalkButton";

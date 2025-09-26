@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Education from "./Education";
 import Experience from "./Experience";
-
+import profile from '../../public/profile.png'
 const About = () => {
   const [activeSection, setActiveSection] = useState("introduction");
 
@@ -57,10 +57,10 @@ const About = () => {
     >
       <div className="md:grid md:grid-cols-2  md:max-w-7xl gap-8 items-center py-8 px-4 xl:gap-0 sm:py-16 max-w-7xl mx-auto ">
        <Image
-  src="/hireme.png"
+  src={profile}
   width={450}
   height={550}
-  alt="About Profile"
+  alt="loading"
   className="bg-[#1e40af] rounded-xl h-auto"
 />
 
