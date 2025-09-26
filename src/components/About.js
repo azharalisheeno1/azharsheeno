@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import AboutProfile from "../../public/hireme.png";
 import { useState } from "react";
 import Education from "./Education";
 import Experience from "./Experience";
@@ -58,7 +57,7 @@ const About = () => {
     >
       <div className="md:grid md:grid-cols-2  md:max-w-7xl gap-8 items-center py-8 px-4 xl:gap-0 sm:py-16 max-w-7xl mx-auto ">
        <Image
-  src={AboutProfile}
+  src="/hireme.png"
   width={450}
   height={550}
   alt="About Profile"

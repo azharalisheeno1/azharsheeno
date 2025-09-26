@@ -2,8 +2,6 @@
 
 import { useTypewriter } from "react-simple-typewriter";
 import Image from "next/image";
-// import profil from "../../public/Image.png";
-import profile from "../../public/MyProfile.png";
 import Logo from "../../public/logos/email.png";
 import Logo2 from "../../public/logos/li.png";
 import Logo3 from "../../public/logos/github.png";
@@ -57,7 +55,7 @@ function Hero() {
         <section className="pt-24 md:py-0 md:max-w-7xl mx-auto  sm:h-screen  flex   md:flex-row-reverse flex-col  items-center">
           <div className="flex-1  flex items-center  justify-center ">
           <Image
-  src={profile}
+  src="/MyProfile.png"
   alt="loading"
   width={800}
   height={800}
