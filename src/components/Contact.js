@@ -1,36 +1,46 @@
-"use client"
+"use client";
 import { useRef, useState } from "react";
 import Logo from "../../public/logos/email.png";
 import Logo2 from "../../public/logos/li.png";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import Logo3 from "../../public/logos/whatsapp.png";
 
 import Image from "next/image";
 function Contact() {
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+  const form = useRef();
 
-  const [success,setSuccess]= useState(false)
-const [error,setError]= useState(false)
-const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setError(false);
+    setSuccess(false);
 
-const sendEmail = (e) => {
-  e.preventDefault();
-  setError(false)
-  setSuccess(false)
-
-  emailjs
-    .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID,process.env.NEXT_PUBLIC_TEMPLETE_ID, form.current, process.env.NEXT_PUBLIC_KEY_ID)
-    .then(
-      () => {
-       setSuccess(true)
-       form.current.reset()
-      },
-      () => {
-        setError(true)
-      },
-    );
-};
-
-
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLETE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_KEY_ID
+        
+        
+      )
+      .then(
+        () => {
+          setSuccess(true);
+          console.log(
+            process.env.NEXT_PUBLIC_SERVICE_ID,
+            process.env.NEXT_PUBLIC_TEMPLETE_ID,
+            form.current,
+            process.env.NEXT_PUBLIC_KEY_ID
+          );
+          form.current.reset();
+        },
+        () => {
+          setError(true);
+        }
+      );
+  };
 
   const social_media = [
     {
@@ -65,16 +75,16 @@ const sendEmail = (e) => {
               Do you want any work from me?
             </h1>
             <p className="text-sm md:text-md text-justify mt-4">
-  Are you looking for someone to bring your projects to life? If so,
-  I'm here to help. With a passion for{" "}
-  <span className="font-bold border-b">MERN Stack & Next.js Development </span>
-   and hands-on experience in building scalable, full-stack applications,
-  I'm eager to collaborate with you. Explore my portfolio to see how I
-  can contribute to your success. Let's transform your ideas into powerful,
-  real-world solutions together.
-</p>
-
-
+              Are you looking for someone to bring your projects to life? If so,
+              I'm here to help. With a passion for{" "}
+              <span className="font-bold border-b">
+                MERN Stack & Next.js Development{" "}
+              </span>
+              and hands-on experience in building scalable, full-stack
+              applications, I'm eager to collaborate with you. Explore my
+              portfolio to see how I can contribute to your success. Let's
+              transform your ideas into powerful, real-world solutions together.
+            </p>{" "}
             <div className="mt-12">
               <h2 className=" text-base font-medium">
                 For collaborations, connect through the following contact
@@ -105,25 +115,25 @@ const sendEmail = (e) => {
               placeholder="Name"
               name="from_name"
               id="name"
-              className="w-full rounded-md   py-3 px-4 bg-gray-100 text-black focus:text-white text-sm outline-none border-2 border-blue-500 focus:bg-transparent"
-                required
-           />
+              className="w-full rounded-md   py-3 px-4  text-black focus:text-black text-sm outline-none border-2 border-blue-500 focus:bg-transparent"
+              required
+            />
             <input
-            name="email"
-            id="email"
+              name="reply_to"
+              id="email"
               type="email"
               placeholder="Email"
-              className="w-full rounded-md py-3 px-4  bg-gray-100 text-black focus:text-white text-sm outline-none border-2 border-blue-500 focus:bg-transparent"
-                required
-           />
+              className="w-full rounded-md py-3 px-4   text-black focus:text-black text-sm outline-none border-2 border-blue-500 focus:bg-transparent"
+              required
+            />
 
             <textarea
               placeholder="Message"
               name="message"
               rows="8"
               id="message"
-              className="w-full rounded-md px-4  bg-gray-100 text-black focus:text-white text-sm pt-3 outline-none border-2 border-blue-500 focus:bg-transparent"
-                required
+              className="w-full rounded-md px-4   text-black focus:text-black text-sm pt-3 outline-none border-2 border-blue-500 focus:bg-transparent"
+              required
             ></textarea>
             <button
               type="submit"
@@ -131,10 +141,17 @@ const sendEmail = (e) => {
             >
               Send
             </button>
-            {success && (<span className="text-green-500 font-semibold ">Your message has been sent successfully!</span>)}
-            {error && (<span className="text-red-500 font-semibold">Something wents wrong!</span>)}
+            {success && (
+              <span className="text-green-500 font-semibold ">
+                Your message has been sent successfully!
+              </span>
+            )}
+            {error && (
+              <span className="text-red-500 font-semibold">
+                Something wents wrong!
+              </span>
+            )}
           </form>
-        
         </div>
       </section>
     </>
