@@ -119,7 +119,7 @@ function Contact() {
               required
             />
             <input
-              name="reply_to"
+              name="email"
               id="email"
               type="email"
               placeholder="Email"
