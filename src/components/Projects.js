@@ -11,9 +11,9 @@ function Projects() {
   return (
     <>
     
-    <section id="projects" className=" h-full py-20    bg-slate-950 text-white">
+    <section id="projects" className=" h-full      ">
         <div className="text-center">
-          <h2 className="text-3xl font-bold border-b uppercase  w-fit mx-auto border-cyan-400 mb-4">PROJECTS </h2>
+          <h2 className="text-3xl font-bold border-b uppercase  w-fit mx-auto border-blue-600 mb-4">PROJECTS </h2>
           <p className=" mt-2 md:max-w-7xl mx-auto text-sm text-justify md:text-center px-6 ">
             I showcase a diverse array of projects that reflect my expertise and
             passion as a developer. Each project embodies a unique challenge and
@@ -37,13 +37,13 @@ function Projects() {
             >
               {projects.map((project_info, i) => (
                 <SwiperSlide key={i}>
-                  <div className="h-fit max-w-3xl mx-auto p-4 bg-slate-700 rounded-xl mt-6 mb-10">
+                  <div className="h-fit max-w-xl mx-auto p-4 bg-[#1e40af] rounded-xl mt-6 mb-10">
                     <Image
                       src={project_info.img}
                       className="rounded-lg h-80 md:h-80"
                       alt={project_info.name}
                     />
-                    <h3 className="text-xl font-semibold my-4">
+                    <h3 className="text-xl text-white font-semibold my-4">
                       {project_info.name}
                     </h3>
                  
@@ -52,7 +52,7 @@ function Projects() {
                         href={project_info.github_link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-stylish bg-cyan-500 px-4 py-1 rounded-md hover:bg-cyan-800 hover:scale-110 ease-out duration-300 inline-block"
+                        className="font-stylish bg-white text-black px-4 py-1 rounded-md hover:scale-110 ease-out duration-300 inline-block"
                       >
                         GitHub
                       </Link>
@@ -60,9 +60,9 @@ function Projects() {
                         href={project_info.live_link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-stylish bg-cyan-500 px-4 py-1 rounded-md hover:bg-cyan-800 hover:scale-110 ease-out duration-300 inline-block"
+                        className="font-stylish bg-white text-black px-4 py-1 rounded-md  hover:scale-110 ease-out duration-300 inline-block"
                       >
-                        Live Demo
+                        Demo
                       </Link>
                     </div>
                   </div>

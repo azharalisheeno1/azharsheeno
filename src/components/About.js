@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import AboutProfile from "../../public/pro.png";
+import AboutProfile from "../../public/hireme.png";
 import { useState } from "react";
 import Education from "./Education";
 import Experience from "./Experience";
@@ -12,14 +12,34 @@ const About = () => {
 
   const sections = {
     introduction: {
-      title: "Passionate React JS & Next JS Developer",
+      title: "Passionate MERN Stack & Next.js Developer",
       content: (
         <p className="text-justify text-md md:px-0 mx-auto">
-          Greetings! I'm Azhar Ali. I'm a proud graduate from Quaid-e-Awam University Of Engineering, Science & Technology Nawabshah in the B.S Computer Science Department. As a <span className="text-cyan-500 font-medium">React.js and Next.js Developer</span>, I've delved into the exciting world of Front-end Development. My focus is on crafting engaging user interfaces and interactive experiences.
-          <br /><br />
-          With React.js, I've built robust, scalable web applications that adapt seamlessly to user needs. To ensure pixel-perfect design and optimal user experience, I use Tailwind CSS to create sleek, responsive layouts that look stunning on any device.
-          <br /><br />
-          My journey in computer science has provided me with a solid foundation in algorithms, data structures, and software engineering principles, empowering me to tackle complex challenges with confidence.
+          Greetings! I'm Azhar Ali, a proud graduate from Quaid-e-Awam
+          University Of Engineering, Science & Technology Nawabshah with a B.S
+          in Computer Science. As a{" "}
+          <span className="text-blue-700 font-medium">
+            MERN Stack & Next.js Developer
+          </span>
+          , I specialize in building full-stack web applications that combine
+          powerful backend systems with dynamic, responsive front-end
+          interfaces.
+          <br />
+          <br />
+          On the front-end, I use React.js and Next.js to craft interactive,
+          user-friendly experiences, while leveraging Tailwind CSS to design
+          sleek, responsive layouts that look stunning across all devices.
+          <br />
+          <br />
+          On the back-end, I work with Node.js, Express.js, and MongoDB to
+          develop scalable APIs, secure authentication systems, and robust
+          server-side solutions.
+          <br />
+          <br />
+          My journey in computer science has given me a solid foundation in
+          algorithms, data structures, and software engineering principles,
+          empowering me to tackle complex challenges and deliver efficient,
+          production-ready solutions with confidence.
         </p>
       ),
     },
@@ -32,9 +52,19 @@ const About = () => {
   };
 
   return (
-    <section className="text-white md:h-screen  bg-slate-900 flex justify-center px-3 py-16 md:py-0 items-center " id="about">
-      <div className="md:grid md:grid-cols-2   gap-8 items-center py-8 px-4 xl:gap-0 sm:py-16 max-w-7xl mx-auto ">
-        <Image src={AboutProfile} width={450} className='bg-slate-800  rounded-xl' height={550} alt="About Profile" />
+    <section
+      className=" md:h-screen   flex justify-center px-3 py-16 md:py-0 items-center "
+      id="about"
+    >
+      <div className="md:grid md:grid-cols-2  md:max-w-7xl gap-8 items-center py-8 px-4 xl:gap-0 sm:py-16 max-w-7xl mx-auto ">
+       <Image
+  src={AboutProfile}
+  width={450}
+  height={550}
+  alt="About Profile"
+  className="bg-[#1e40af] rounded-xl h-auto"
+/>
+
         <div className="mt-4 md:mt-0 text-left flex flex-col  h-full">
           <div className="flex flex-row justify-start ">
             <div className="flex justify-center md:justify-start gap-4 md:gap-6 items-center">
@@ -44,8 +74,8 @@ const About = () => {
                   onClick={() => handleButtonClick(section)}
                   className={`md:py-2 py-1 font-semibold ${
                     activeSection === section
-                      ? "border-cyan-500 border-b-2 text-cyan-500"
-                      : "hover:border-cyan-500 hover:border-b-2"
+                      ? "border-blue-600 border-b-2 text-blue-800"
+                      : "hover:border-blue-600 hover:border-b-2"
                   }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -53,14 +83,14 @@ const About = () => {
               ))}
             </div>
           </div>
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.5 }}
-           
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration:0.3, ease: "easeInOut" }} 
-            className="mt-4">
+          <motion.div
+            // initial={{ opacity: 0, scale: 0.5 }}
+            // whileInView={{ opacity: 1, scale: 1 }}
+            // transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="mt-4"
+          >
             {activeSection === "introduction" && (
-              <h1 className="md:text-start md:px-0 md:text-xl text-[17px] font-semibold mb-3 text-white">
+              <h1 className="md:text-start md:px-0 md:text-xl text-[17px] text-blue-600 font-semibold mb-3 ">
                 {sections.introduction.title}
               </h1>
             )}

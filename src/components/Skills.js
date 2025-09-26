@@ -20,6 +20,8 @@ import express from "../../public/skills/express.png";
 import next from "../../public/skills/next.png";
 import mongodb from "../../public/skills/mongodb.png";
 import vercel from "../../public/skills/vercel.png";
+import bcyrpt from "../../public/skills/bcyrpt.png";
+import auth from "../../public/skills/auth.png";
 
 import Image from "next/image";
 
@@ -82,6 +84,18 @@ const Skills = () => {
       count: 8,
       shadow: " shadow-green-500",
     },
+    {
+      logo: bcyrpt,
+      level: "Hashing",
+      count: 19,
+      shadow: " shadow-gray-500",
+    },
+    {
+      logo: auth,
+      level: "Authentication",
+      count: 20,
+      shadow: " shadow-gray-400",
+    },
 
     {
       logo: next,
@@ -108,7 +122,7 @@ const Skills = () => {
       logo: Formik,
       level: "Formik",
       count: 11,
-      shadow: " shadow-white",
+      shadow: " shadow-blue-600",
     },
     {
       logo: yup,
@@ -127,7 +141,7 @@ const Skills = () => {
       logo: Github,
       level: "Github",
       count: 14,
-      shadow: " shadow-white",
+      shadow: " shadow-black",
     },
     {
       logo: Firebase,
@@ -156,9 +170,9 @@ const Skills = () => {
     },
   ];
   return (
-    <section id="skills" className="py-16 md:h-full  bg-slate-900 relative">
-      <div className="mt-8 max-w-7xl mx-auto   text-white text-center">
-        <h2 className="text-3xl font-bold border-b uppercase  w-fit mx-auto border-cyan-500 mb-4">
+    <section id="skills" className="py-16 md:h-full   relative">
+      <div className="mt-8 max-w-7xl mx-auto   text-center">
+        <h2 className="text-3xl font-bold border-b uppercase  w-fit mx-auto border-blue-600 mb-4">
           SKILLS
         </h2>
         <p className="mt-3 text-justify  text-[15px] px-5 md:text-center  ">
@@ -167,37 +181,38 @@ const Skills = () => {
           developed and utilized
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-6 mt-4 sm:gap-8 gap-4 p-4 ">
+        <div className="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-8 mt-4 sm:gap-8 gap-4 p-4 ">
           {skills?.map((skill, i) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
+              // initial={{ opacity: 0, scale: 0.5 }}
+              // whileInView={{ opacity: 1, scale: 1 }}
+              // transition={{ duration: 0.3, ease: "easeInOut" }}
               key={i}
               className={
-                `group shadow-md hover:-scale-125 duration-500 mx-auto relative min-w-[11rem] max-w-[14rem] bg-slate-700 p-4 sm:p-4 rounded-xl flex flex-col justify-between` +
+                `group shadow-md hover:-scale-125 duration-500 mx-auto relative min-w-[7rem] max-w-[14rem]  p-4 sm:p-4 rounded-xl flex flex-col justify-between` +
                 " " +
                 skill.shadow
               }
             >
               <div className="flex items-center justify-center rounded-full">
-                <div className="text-6xl bg-slate-700 rounded-full flex items-center justify-center group-hover:text-cyan-600">
+                <div className="text-3xl  rounded-full flex items-center justify-center group-hover:text-cyan-600">
                   <motion.div
                     whileTap={{ scale: 1.2, rotate: 360 }}
                     whileHover={{ scale: 1.2, rotate: 360 }}
                   >
-                    <Image
-                      className="w-16 h-16 object-contain"
-                      src={skill.logo}
-                      height={80}
-                      width={80}
-                      alt="loading"
-                    />
+             <Image
+  src={skill.logo}
+  alt="loading"
+  width={80}
+  height={80}
+  className="w-12 h-auto object-contain"
+/>
+
                   </motion.div>
                 </div>
               </div>
 
-              <p className="text-xl pt-8 font-stylish text-center mt-auto">
+              <p className="text-sm pt-3 font-stylish text-center mt-auto">
                 {skill.level}
               </p>
             </motion.div>

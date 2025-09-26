@@ -56,26 +56,27 @@ const sendEmail = (e) => {
   return (
     <>
       <section
-        className="text-white md:h-screen bg-slate-900 flex justify-center px-3 py-16 md:py-0 items-center "
+        className=" md:h-screen  flex justify-center px-3 py-16 md:py-0 items-center "
         id="contact"
       >
-        <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-7xl  bg-slate-900 ">
+        <div className="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-7xl  b ">
           <div>
-            <h1 className="text-white text-3xl font-bold">
+            <h1 className=" text-3xl font-bold">
               Do you want any work from me?
             </h1>
-            <p className="text-sm md:text-md text-justify text-white mt-4">
-              Are you looking for someone to bring your projects to life? If so,
-              I'm here to help. With a passion for{" "}
-              <span className="text-cyan-500">Next.js / React.js </span>
-              Development and a proven track record of delivering exceptional
-              results, I'm eager to collaborate with you. Take a moment to
-              explore my portfolio and see how I can contribute to your success.
-              Let's turn your ideas into reality together.
-            </p>
+            <p className="text-sm md:text-md text-justify mt-4">
+  Are you looking for someone to bring your projects to life? If so,
+  I'm here to help. With a passion for{" "}
+  <span className="font-bold border-b">MERN Stack & Next.js Development </span>
+   and hands-on experience in building scalable, full-stack applications,
+  I'm eager to collaborate with you. Explore my portfolio to see how I
+  can contribute to your success. Let's transform your ideas into powerful,
+  real-world solutions together.
+</p>
+
 
             <div className="mt-12">
-              <h2 className="text-white text-base font-medium">
+              <h2 className=" text-base font-medium">
                 For collaborations, connect through the following contact
                 options!
               </h2>
@@ -91,7 +92,7 @@ const sendEmail = (e) => {
                       height={35}
                     />
 
-                    <h1 className="text-white text-md ml-4">{icon.name}</h1>
+                    <h1 className="text-md ml-4">{icon.name}</h1>
                   </li>
                 ))}
               </ul>
@@ -104,7 +105,7 @@ const sendEmail = (e) => {
               placeholder="Name"
               name="from_name"
               id="name"
-              className="w-full rounded-md   py-3 px-4 bg-gray-100 text-black focus:text-white text-sm outline-none border-2 border-slate-500 focus:bg-transparent"
+              className="w-full rounded-md   py-3 px-4 bg-gray-100 text-black focus:text-white text-sm outline-none border-2 border-blue-500 focus:bg-transparent"
                 required
            />
             <input
@@ -112,7 +113,7 @@ const sendEmail = (e) => {
             id="email"
               type="email"
               placeholder="Email"
-              className="w-full rounded-md py-3 px-4  bg-gray-100 text-black focus:text-white text-sm outline-none border-2 border-slate-500 focus:bg-transparent"
+              className="w-full rounded-md py-3 px-4  bg-gray-100 text-black focus:text-white text-sm outline-none border-2 border-blue-500 focus:bg-transparent"
                 required
            />
 
@@ -121,12 +122,12 @@ const sendEmail = (e) => {
               name="message"
               rows="8"
               id="message"
-              className="w-full rounded-md px-4  bg-gray-100 text-black focus:text-white text-sm pt-3 outline-none border-2 border-slate-500 focus:bg-transparent"
+              className="w-full rounded-md px-4  bg-gray-100 text-black focus:text-white text-sm pt-3 outline-none border-2 border-blue-500 focus:bg-transparent"
                 required
             ></textarea>
             <button
               type="submit"
-              className="text-white bg-cyan-500 hover:bg-cyan-600 tracking-wide rounded-md  text-md px-4 py-3 w-full !mt-6"
+              className="text-white bg-blue-800 hover:bg-blue-900 tracking-wide rounded-md  text-md px-4 py-3 w-full !mt-6"
             >
               Send
             </button>
