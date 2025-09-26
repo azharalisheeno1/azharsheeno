@@ -88,9 +88,9 @@ export const Services = () => {
         <div className="mx-auto grid justify-center  gap-4 md:gap-6 sm:grid-cols-2  md:grid-cols-4">
           {services.map((service) => (
             <motion.div
-            // initial={{ opacity: 0, scale: 0.5 }}
-            //   whileInView={{ opacity: 1, scale: 1 }}
-            //   transition={{ duration: 0.3, ease: "easeInOut" }}
+            initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
               key={service.id}
               className="overflow-hidden   rounded-lg border-2 border-blue-500  p-3 transform  hover:shadow-lg transition duration-300 ease-in-out"
             >

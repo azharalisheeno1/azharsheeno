@@ -184,9 +184,9 @@ const Skills = () => {
         <div className="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-8 mt-4 sm:gap-8 gap-4 p-4 ">
           {skills?.map((skill, i) => (
             <motion.div
-              // initial={{ opacity: 0, scale: 0.5 }}
-              // whileInView={{ opacity: 1, scale: 1 }}
-              // transition={{ duration: 0.3, ease: "easeInOut" }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
               key={i}
               className={
                 `group shadow-md hover:-scale-125 duration-500 mx-auto relative min-w-[7rem] max-w-[14rem]  p-4 sm:p-4 rounded-xl flex flex-col justify-between` +
